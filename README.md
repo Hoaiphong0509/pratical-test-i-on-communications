@@ -4,6 +4,10 @@
 
 This project is a practical test for a junior position, aiming to create a flexible web application for presenting quick content advertising through drag and drop components. The application has two main sites: Admin (for management) and Consumer (for presentation).
 
+## Pattern
+I use the Memento pattern to organize data. For each edit, I create a snapshot version so that users can easily undo and redo. If the data becomes more complex and extensive, I might consider transitioning to the Command pattern.
+
+Instead of using state management libraries (such as Redux, Recoil, Zustand), I've opted to utilize React's Context to manage state and skip the complicated setup steps that I believe are unnecessary for this project.
 ## Tech Stack
 
 - ReactJS
